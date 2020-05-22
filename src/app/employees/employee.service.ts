@@ -7,7 +7,7 @@ import { DataService } from '../services/data.service';
 })
 export class EmployeeService extends DataService {
   constructor(http: HttpClient) {
-    super('http://88.201.64.7:4058/api/Employees', http);
+    super('https://88.201.64.7:4058/api/Employees', http);
   }
 
 }

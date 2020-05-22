@@ -8,7 +8,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
   providedIn: 'root'
 })
 export class AuthService {
-  loginURL = 'http://88.201.64.7:4058/api/Login';
+  loginURL = 'https://88.201.64.7:4058/api/Login';
   constructor(private http: HttpClient) { }
 
   login(credentials: Login) {
