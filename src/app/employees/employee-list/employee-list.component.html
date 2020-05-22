@@ -1,0 +1,21 @@
+<div *ngIf="loggedIn">
+
+</div>
+<div *ngIf="loggedIn then welcom  else login"></div>
+<ng-template #welcom>
+  Welcome {{currentUser}}
+</ng-template>
+<ng-template #login>
+  Please Login
+</ng-template>
+
+
+
+<ul class="thumbnails">
+  <li *ngFor="let emp of employees?.employees" class="span4">
+    <a [routerLink]="['/employee-details',emp.id,emp.name]"
+      [queryParams]="{id:emp.id,name: emp.name ,salary: emp.salary}" class="thumbnail">
+      {{emp.name}}
+    </a>
+  </li>
+</ul>

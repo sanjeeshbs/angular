@@ -1,0 +1,13 @@
+
+export class Employee{
+    id: number;
+    name: string;
+    salary: number;
+}
+
+export class Employees{
+    employees: Employee[];
+    status: string;
+}
+
+
